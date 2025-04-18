@@ -6,12 +6,10 @@ const messageInput = document.getElementById('message');
 const button = document.getElementById('button');
 
 
-// BLOCO DE ICONES SELECIONADOS POR ID CLASSE
 const nameIcon = document.querySelector('.icon-name');
 const emailIcon = document.querySelector('.icon-email');
 const messageIcon = document.querySelector('.icon-message');
 
-// BLOCO DE MENSAGEM DE ERROR SELECIONADAS POR ID INDIVIDUALMENTE 
 const nameError = document.getElementById('error-name');
 const emailError = document.getElementById('error-email');
 const messageError = document.getElementById('error-message');
@@ -49,7 +47,6 @@ form.addEventListener("submit", function (event) {
   }
 })
 
-// Disable alert when something is typed in the invalid field 
 nameInput.addEventListener('input', function () {
   nameError.style.opacity = '0';
   nameIcon.style.display = 'none';
